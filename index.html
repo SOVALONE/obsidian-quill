@@ -410,7 +410,8 @@ body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:-1;
 @keyframes sheen{0%{transform:translate(-25%,-10%) rotate(0deg)}100%{transform:translate(25%,10%) rotate(8deg)}}
 h1 em,h2 em,h3 em{color:transparent;background:linear-gradient(100deg,#b79cff,#e9dcff,#8f6bff);-webkit-background-clip:text;background-clip:text}
 .btn-w{background:linear-gradient(120deg,#e9dcff,#b79cff);color:#120f1c}
-#shard.hero-logo2{filter:drop-shadow(0 0 50px rgba(150,110,255,.35)) drop-shadow(0 40px 60px rgba(0,0,0,.7))}
+#shard{filter:drop-shadow(0 0 50px rgba(150,110,255,.35)) drop-shadow(0 40px 60px rgba(0,0,0,.75))}
+#shard stop{stop-color:#b79cff}#shard stop:nth-child(2){stop-color:#e9dcff}#shard stop:nth-child(3){stop-color:#8f6bff}#shard stop:nth-child(4){stop-color:#d6c8ff}
 @media (prefers-reduced-motion:reduce){body::after{animation:none}}
 </style>
 </head>
@@ -484,7 +485,34 @@ h1 em,h2 em,h3 em{color:transparent;background:linear-gradient(100deg,#b79cff,#e
       </div>
     </div>
     <div class="shard-wrap rv hr" style="--d:.3s">
-      <img id="shard" class="hero-logo2" src="logo2-hero.jpg" alt="ObsidianQuill.studio logo">
+      <svg id="shard" viewBox="0 0 400 500" aria-hidden="true">
+        <defs>
+          <linearGradient id="sh1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#F2EDDA"/><stop offset=".33" stop-color="#cfc8b6"/><stop offset=".66" stop-color="#f3cf9b"/><stop offset="1" stop-color="#bdb6a6"/>
+            <animateTransform attributeName="gradientTransform" type="rotate" from="0 .5 .5" to="360 .5 .5" dur="14s" repeatCount="indefinite"/>
+          </linearGradient>
+          <linearGradient id="sh2" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#bdb6a6"/><stop offset=".5" stop-color="#cfc8b6"/><stop offset="1" stop-color="#F2EDDA"/>
+            <animateTransform attributeName="gradientTransform" type="rotate" from="360 .5 .5" to="0 .5 .5" dur="18s" repeatCount="indefinite"/>
+          </linearGradient>
+        </defs>
+        <g stroke="url(#sh1)" stroke-width="1" stroke-linejoin="round">
+          <polygon points="200,10 90,90 210,250" fill="#16151c"/>
+          <polygon points="200,10 330,120 210,250" fill="#0d0d12"/>
+          <polygon points="330,120 380,300 210,250" fill="#121118"/>
+          <polygon points="380,300 260,490 210,250" fill="#09090c"/>
+          <polygon points="260,490 120,450 210,250" fill="#111016"/>
+          <polygon points="120,450 30,260 210,250" fill="#0b0b0f"/>
+          <polygon points="30,260 90,90 210,250" fill="#14131a"/>
+        </g>
+        <g style="mix-blend-mode:screen">
+          <polygon points="200,10 330,120 210,250" fill="url(#sh1)" opacity=".22"/>
+          <polygon points="30,260 90,90 210,250" fill="url(#sh2)" opacity=".18"/>
+          <polygon points="380,300 260,490 210,250" fill="url(#sh2)" opacity=".12"/>
+          <polygon points="200,10 90,90 210,250" fill="url(#sh1)" opacity=".1"/>
+        </g>
+        <polyline points="200,10 210,250 260,490" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1"/>
+      </svg>
     </div>
   </div>
   <div class="scroll-ind" aria-hidden="true"></div>
