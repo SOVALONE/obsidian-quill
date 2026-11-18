@@ -331,7 +331,7 @@ input[type=range]::-moz-range-thumb{width:22px;height:22px;border:0;border-radiu
 .ok svg *{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.2s var(--ease) .2s}
 .ok.show svg *{stroke-dashoffset:0}
 .ok h3{font-size:52px}
-.ok p{color:var(--mute)}
+.ok p{color:var(--mute)}.fmsg{min-height:1.4em;margin-top:14px;font-size:15px;color:var(--mute)}.fmsg.err{color:#ff8a7a}.fmsg.err a{text-decoration:underline}.btn.sending{pointer-events:none;opacity:.75}.btn.sending svg{display:none}.btn.sending span::after{content:"";display:inline-block;width:14px;height:14px;margin-left:10px;vertical-align:-2px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:spin .7s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.fld.bad input,.fld.bad textarea{border-color:#ff8a7a!important}.ok .again{margin-top:10px}
 
 /* footer */
 footer{border-top:1px solid var(--line);padding:80px 0 34px;overflow:hidden;position:relative}
@@ -614,10 +614,11 @@ footer{border-top:1px solid var(--line);padding:80px 0 34px;overflow:hidden;posi
       <div class="fld"><textarea id="fM" rows="3" placeholder=" "></textarea><label for="fM" data-i="f_m">About your project</label><i></i></div>
       <div class="blab" data-i="f_b">Budget</div>
       <div class="pills" id="bud"><button type="button" class="pill">&lt; 300 €</button><button type="button" class="pill on">300–600 €</button><button type="button" class="pill">600–1200 €</button><button type="button" class="pill">1200 € +</button></div>
-      <button class="btn btn-w mag" type="submit"><span data-i="f_s">Send message</span><svg><use href="#arr"/></svg></button>
+      <button class="btn btn-w mag" id="fSend" type="submit"><span data-i="f_s">Send message</span><svg><use href="#arr"/></svg></button>
+      <p class="fmsg" id="fmsg" role="status" aria-live="polite"></p>
       <div class="ok" id="ok">
         <svg viewBox="0 0 100 100"><circle pathLength="1" cx="50" cy="50" r="44" fill="none" stroke="url(#iriG)" stroke-width="2"/><path pathLength="1" d="M31 51 L45 64 L70 37" fill="none" stroke="#EEEBE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h3 data-i="ok_h">Thank you!</h3><p data-i="ok_p">We'll get back to you within 24 hours.</p>
+        <h3 data-i="ok_h">Thank you!</h3><p data-i="ok_p">We'll get back to you within 24 hours.</p><button type="button" class="btn btn-o again" data-i="ok_again">Send another message</button>
       </div>
     </form>
   </div>
@@ -668,7 +669,7 @@ en: {
   f_h:'Good <em>questions.</em>',
   faq:[['Do you build mobile apps?','Yes. We use Flutter: one codebase for iOS, Android, desktop and web, with modern design and native performance. Simple apps start from €1 490.'],['How fast can you launch my site?','A simple site takes about a week. Bigger projects take 2–4 weeks. Either way, you see a demo within 3 days.'],['Can I edit the site myself?','Yes. Business and Premium include an admin panel where you change texts, photos and prices without touching code.'],['Do I pay everything upfront?','No. You pay 30% to start and the rest only after you approve the finished site.'],['What about domain and hosting?','We set everything up for you. The domain is registered in your name, so you always own it.'],['Which languages do you work in?','English, Romanian and Ukrainian, and we build sites in whatever language your clients speak.']],
   ct_h:"Let's write <em>your</em> story.",ct_p:'Tell us about your business. We reply within 24 hours with ideas and a price.',
-  f_n:'Name',f_c:'Email or phone',f_m:'About your project',f_b:'Budget',f_s:'Send message',ok_h:'Thank you!',ok_p:"We'll get back to you within 24 hours.",
+  f_n:'Name',f_c:'Email or phone',f_m:'About your project',f_b:'Budget',f_s:'Send message',ok_h:'Thank you!',ok_p:"We'll get back to you within 24 hours.",ok_again:'Send another message',
   ft_p:'Websites & Flutter apps studio. Romania · Remote.',ft_s:'Studio',ft_f:'Follow',ft_r:'Written by hand, with care.'
 },
 ro: {
@@ -694,7 +695,7 @@ ro: {
   f_h:'Întrebări <em>bune.</em>',
   faq:[['Faceți și aplicații mobile?','Da. Folosim Flutter: un singur cod pentru iOS, Android, desktop și web, cu design modern și performanță nativă. Aplicațiile simple încep de la €1 490.'],['Cât de repede poate fi gata site-ul?','Un site simplu durează aproximativ o săptămână, proiectele mai mari 2–4 săptămâni. Oricum, vezi un demo în 3 zile.'],['Pot modifica singur site-ul?','Da. Pachetele Business și Premium includ un panou admin unde schimbi texte, poze și prețuri fără cod.'],['Plătesc totul în avans?','Nu. 30% la început, restul doar după ce aprobi site-ul final.'],['Cum rămâne cu domeniul și hostingul?','Configurăm noi totul. Domeniul este înregistrat pe numele tău, deci îți aparține mereu.'],['În ce limbi lucrați?','Română, engleză și ucraineană, iar site-uri facem în orice limbă vorbesc clienții tăi.']],
   ct_h:'Hai să scriem <em>povestea ta.</em>',ct_p:'Spune-ne despre afacerea ta. Răspundem în 24 de ore cu idei și un preț.',
-  f_n:'Nume',f_c:'Email sau telefon',f_m:'Despre proiect',f_b:'Buget',f_s:'Trimite mesajul',ok_h:'Mulțumim!',ok_p:'Revenim în cel mult 24 de ore.',
+  f_n:'Nume',f_c:'Email sau telefon',f_m:'Despre proiect',f_b:'Buget',f_s:'Trimite mesajul',ok_h:'Mulțumim!',ok_p:'Revenim în cel mult 24 de ore.',ok_again:'Trimite alt mesaj',
   ft_p:'Studio de site-uri și aplicații Flutter. România · Remote.',ft_s:'Studio',ft_f:'Urmărește',ft_r:'Scris de mână, cu grijă.'
 },
 uk: {
@@ -720,7 +721,7 @@ uk: {
   f_h:'Слушні <em>питання.</em>',
   faq:[['Ви робите мобільні застосунки?','Так. Ми працюємо на Flutter: один код для iOS, Android, десктопу й вебу, сучасний дизайн і нативна швидкість. Прості застосунки — від €1 490.'],['Як швидко буде готовий сайт?','Простий — приблизно за тиждень, більші проєкти — за 2–4 тижні. Демо ви в будь-якому разі побачите за 3 дні.'],['Чи зможу я сам редагувати сайт?','Так. У Business і Premium є адмінка, де ви змінюєте тексти, фото й ціни без коду.'],['Чи треба платити все наперед?','Ні. 30% на старті, решту — тільки після того, як ви приймете готовий сайт.'],['А домен і хостинг?','Ми все налаштуємо. Домен реєструється на вас, тож він завжди ваш.'],['Якими мовами ви працюєте?','Українською, румунською та англійською, а сайти робимо будь-якою мовою ваших клієнтів.']],
   ct_h:'Напишімо <em>вашу</em> історію.',ct_p:'Розкажіть про свій бізнес. Відповімо протягом 24 годин з ідеями та ціною.',
-  f_n:'Ім\'я',f_c:'Email або телефон',f_m:'Про ваш проєкт',f_b:'Бюджет',f_s:'Надіслати',ok_h:'Дякуємо!',ok_p:'Ми відповімо протягом 24 годин.',
+  f_n:'Ім\'я',f_c:'Email або телефон',f_m:'Про ваш проєкт',f_b:'Бюджет',f_s:'Надіслати',ok_h:'Дякуємо!',ok_p:'Ми відповімо протягом 24 годин.',ok_again:'Надіслати ще одне',
   ft_p:'Студія сайтів і застосунків на Flutter. Румунія · віддалено.',ft_s:'Студія',ft_f:'Соцмережі',ft_r:'Написано вручну, з турботою.'
 }};
 const PLANS = [['Start', 290, 15, false], ['Business', 590, 29, true], ['Premium', 1190, 49, false]];
@@ -819,16 +820,41 @@ faqEl.addEventListener('click', e => {
 // Set FORM_ENDPOINT to e.g. 'https://formsubmit.co/ajax/you@example.com' to receive messages.
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/hello@obsidianquill.studio';
 $('#bud').addEventListener('click', e => { const b = e.target.closest('.pill'); if (!b) return; $$('.pill', $('#bud')).forEach(x => x.classList.toggle('on', x === b)); });
+const FMSG = {
+  en: { name: 'Please enter your name.', contact: 'Please enter your email or phone.', sending: 'Sending…', err: 'Sorry, the message could not be sent. Please write to us at <a href="mailto:hello@obsidianquill.studio">hello@obsidianquill.studio</a>.', again: 'Send another message' },
+  ro: { name: 'Te rugăm să scrii numele.', contact: 'Te rugăm să scrii emailul sau telefonul.', sending: 'Se trimite…', err: 'Ne pare rău, mesajul nu a putut fi trimis. Scrie-ne la <a href="mailto:hello@obsidianquill.studio">hello@obsidianquill.studio</a>.', again: 'Trimite alt mesaj' },
+  uk: { name: 'Будь ласка, вкажіть ім\'я.', contact: 'Будь ласка, вкажіть email або телефон.', sending: 'Надсилаємо…', err: 'На жаль, повідомлення не надіслано. Напишіть нам на <a href="mailto:hello@obsidianquill.studio">hello@obsidianquill.studio</a>.', again: 'Надіслати ще одне' }
+};
+const fm = k => (FMSG[L] || FMSG.en)[k];
 $('#form').addEventListener('submit', async e => {
   e.preventDefault();
-  const n = $('#fN'), c = $('#fC');
+  const n = $('#fN'), c = $('#fC'), msg = $('#fmsg'), b = $('#fSend'), lbl = $('span', b);
+  $$('#form .fld').forEach(f => f.classList.remove('bad'));
+  msg.className = 'fmsg'; msg.textContent = '';
   const bad = !n.value.trim() ? n : c.value.trim().length < 5 ? c : null;
-  if (bad) { bad.focus(); bad.parentElement.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-8px)' }, { transform: 'translateX(8px)' }, { transform: 'translateX(0)' }], { duration: 320 }); return; }
-  if (FORM_ENDPOINT) {
-    try { await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ name: n.value, contact: c.value, message: $('#fM').value, budget: $('#bud .on').textContent }) }); } catch (_) {}
+  if (bad) {
+    bad.parentElement.classList.add('bad'); bad.focus();
+    bad.parentElement.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-8px)' }, { transform: 'translateX(8px)' }, { transform: 'translateX(0)' }], { duration: 320 });
+    msg.className = 'fmsg err'; msg.textContent = fm(bad === n ? 'name' : 'contact');
+    return;
   }
-  $('#ok').classList.add('show');
+  const old = lbl.textContent;
+  b.classList.add('sending'); lbl.textContent = fm('sending');
+  let ok = false;
+  try {
+    const r = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ name: n.value, contact: c.value, message: $('#fM').value, budget: $('#bud .on').textContent, _subject: 'New request from obsidianquill.studio' }) });
+    const j = await r.json().catch(() => ({}));
+    ok = r.ok && String(j.success) === 'true';
+  } catch (_) {}
+  b.classList.remove('sending'); lbl.textContent = old;
+  if (ok) {
+    $('#ok').classList.add('show');
+    $('#form').reset ? $('#form').reset() : 0;
+  } else {
+    msg.className = 'fmsg err'; msg.innerHTML = fm('err');
+  }
 });
+$('#ok').addEventListener('click', e => { if (e.target.closest('.again')) $('#ok').classList.remove('show'); });
 
 /* ================= INK CANVAS ================= */
 const cv = $('#ink'), g = cv.getContext('2d');
@@ -932,7 +958,7 @@ const RULES = [['</header>', '[data-s=nav]'], ['<section class="hero">', '[data-
 const codeEl = $('#code'), pv = $('#pv');
 let ci = 0, codeOn = false, codeNext = 0;
 new IntersectionObserver(([e]) => codeOn = e.isIntersecting, { threshold: .25 }).observe($('.lb'));
-function resetCode() { ci = 0; $$('.show', pv).forEach(x => x.classList.remove('show')); $('.pv-hero', pv).classList.remove('dark'); $('[data-s=btn]', pv).classList.remove('round'); }
+function resetCode() { ci = 0; $$('.show', pv).forEach(x => x.classList.remove('show')); $('.pv-hero', pv)?.classList.remove('dark'); $('[data-s=btn]', pv)?.classList.remove('round'); }
 function codeTick(now) {
   if (!codeOn || now < codeNext) return;
   if (ci >= SRC.length) { resetCode(); codeNext = now + 400; return; }
