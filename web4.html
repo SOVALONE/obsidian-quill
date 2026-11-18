@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ObsidianQuill.studio — Web Design & Development Studio</title>
-<meta name="description" content="Obsidian Quill designs and builds fast, premium websites, e-shops and web apps for businesses.">
+<title>ObsidianQuill.studio — Websites & Flutter Apps Studio</title>
+<meta name="description" content="Obsidian Quill designs and builds fast, premium websites, e-shops and cross-platform Flutter apps (iOS, Android, desktop) for businesses.">
 <meta name="theme-color" content="#1c1e22">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="favicon-180.png">
@@ -467,7 +467,7 @@ h1 em,h2 em,h3 em{color:transparent;background:linear-gradient(100deg,#ff6a2b,#f
     <div>
       <div class="eb rv hr" data-i="h_eb">Web design &amp; development studio</div>
       <h1 class="split hr" data-ih="h_h" style="margin-top:26px">Websites written<br>in <em>obsidian ink.</em></h1>
-      <p class="lead rv hr" style="--d:.45s" data-i="h_p">We design and build fast, beautiful websites for businesses that want to look premium online. Delivered in days, not months.</p>
+      <p class="lead rv hr" style="--d:.45s" data-i="h_p">We design and build fast, beautiful websites and Flutter apps for businesses that want to look premium online. Delivered in days, not months.</p>
       <div class="hero-cta rv hr" style="--d:.6s">
         <a href="#work" class="btn btn-w mag"><span data-i="h_b1">See our work</span><svg><use href="#arr"/></svg></a>
         <a href="#pricing" class="btn btn-o mag" data-i="h_b2">Get a quote</a>
@@ -650,15 +650,15 @@ const clamp = (v, a, b) => Math.min(b, Math.max(a, v)), lerp = (a, b, t) => a + 
 const T = {
 en: {
   nav1:'Work',nav2:'Services',nav3:'Process',nav4:'Pricing',nav5:'FAQ',nav6:'Contact',cta:'Start a project',
-  h_eb:'Web design & development studio',h_h:'Websites written<br>in <em>obsidian ink.</em>',
-  h_p:'We design and build fast, beautiful websites for businesses that want to look premium online. Delivered in days, not months.',
+  h_eb:'Websites & apps studio',h_h:'Websites written<br>in <em>obsidian ink.</em>',
+  h_p:'We design and build fast, beautiful websites and Flutter apps for businesses that want to look premium online. Delivered in days, not months.',
   h_b1:'See our work',h_b2:'Get a quote',st1:'days to launch',st2:'days to demo',st3:'reply time',
-  mq:['Business sites','Landing pages','E-shops','Web apps','Admin panels','SEO','Animations','Hosting'],
+  mq:['Business sites','Landing pages','E-shops','Web apps','Flutter apps','iOS & Android','Admin panels','SEO','Animations','Hosting'],
   w_eb:'Selected work',w_h:'Sites that <em>sell</em>, not just exist.',w_p:'Live projects, not screenshots. Hover a card to scroll through the real site.',
   w1:'Construction company · Czech Republic · CMS admin panel',w2:'Gaming keyboard lab · 3D, sound & live configurator',w4:'Café & bakery · Menu, reviews, table booking',w5:'Barbershop · Price list, team, online booking',w6:'Dental clinic · Treatments, FAQ, appointment form',
   w3t:'Your business, <em>next.</em>',w3d:'Your project could be the next one here.',w3b:"Let's talk",cur_open:'Open',
   s_eb:'Services',s_h:'Everything you need <em>online.</em>',s_p:'One studio, from the first sketch to hosting, so you deal with one team and get one invoice.',
-  srv:[['Business websites','A premium site that explains what you do and turns visitors into calls.'],['Landing pages','One page, one goal: sell a product, a service or an event.'],['E-shops','Product catalogue, cart, payments and orders that land straight in your inbox.'],['Web apps & admin panels','Booking systems, dashboards and a CMS so you can edit your site yourself.'],['SEO & Google','Fast pages, clean structure and a Google Business profile, so people nearby can find you.'],['Care & hosting',"Hosting, backups, updates and small edits every month, so you don't have to think about it."]],
+  srv:[['Business websites','A premium site that explains what you do and turns visitors into calls.'],['Landing pages','One page, one goal: sell a product, a service or an event.'],['E-shops','Product catalogue, cart, payments and orders that land straight in your inbox.'],['Mobile & desktop apps','iOS, Android, Windows and web from one Flutter codebase: modern design, native speed, half the cost.'],['Web apps & admin panels','Booking systems, dashboards and a CMS so you can edit your site yourself.'],['SEO & Google','Fast pages, clean structure and a Google Business profile, so people nearby can find you.'],['Care & hosting',"Hosting, backups, updates and small edits every month, so you don't have to think about it."]],
   b_eb:'Live build',b_h:'Watch a site <em>write itself.</em>',b_p:"Clean hand-written code, no heavy templates. That's why our sites load in a blink.",
   p_eb:'Process',p_h:'From first call to <em>launch.</em>',p_p:'Four clear steps. You always know what happens next and what it costs.',
   steps:[['Free call','30 minutes about your business, your clients and your goals. No obligations.'],['Demo in 3 days','You see a real working draft of your site before you pay anything big.'],['Build & polish','Animations, texts, photos, mobile version and speed, refined together with you.'],['Launch & care','Domain, hosting, Google and analytics. After launch we keep the site fresh.']],
@@ -666,25 +666,25 @@ en: {
   from:'from',once:'one-time',mo:'/mo',care:'+ care',popular:'Popular',choose:'Choose',
   plans:[['For a fresh start online',['One-page site','Mobile-ready design','Contact form','Delivered in 7 days']],['Most popular with local businesses',['Up to 6 pages','Premium animations','Admin panel to edit content','Basic SEO + Google profile']],['Shops, apps and custom ideas',['Unlimited pages','E-shop or booking system','Multilingual site','Priority support']]],
   c_h:'Estimate your site in <em>10 seconds.</em>',c_pages:'Pages',c_tot:'Estimated price',c_time:'Ready in',c_days:'days',c_send:'Send this estimate',
-  opts:['Multiple languages','E-shop','Admin panel','Online booking','SEO + Google profile','We write the texts'],
+  opts:['Multiple languages','E-shop','Admin panel','Online booking','SEO + Google profile','We write the texts','Mobile app (Flutter)'],
   est:(p,o,t,d)=>`Estimate: ${p} pages${o.length?', '+o.join(', '):''}. Approx. €${t}, ${d} days.`,
   f_h:'Good <em>questions.</em>',
-  faq:[['How fast can you launch my site?','A simple site takes about a week. Bigger projects take 2–4 weeks. Either way, you see a demo within 3 days.'],['Can I edit the site myself?','Yes. Business and Premium include an admin panel where you change texts, photos and prices without touching code.'],['Do I pay everything upfront?','No. You pay 30% to start and the rest only after you approve the finished site.'],['What about domain and hosting?','We set everything up for you. The domain is registered in your name, so you always own it.'],['Which languages do you work in?','English, Romanian and Ukrainian, and we build sites in whatever language your clients speak.']],
+  faq:[['Do you build mobile apps?','Yes. We use Flutter: one codebase for iOS, Android, desktop and web, with modern design and native performance. Simple apps start from €1 490.'],['How fast can you launch my site?','A simple site takes about a week. Bigger projects take 2–4 weeks. Either way, you see a demo within 3 days.'],['Can I edit the site myself?','Yes. Business and Premium include an admin panel where you change texts, photos and prices without touching code.'],['Do I pay everything upfront?','No. You pay 30% to start and the rest only after you approve the finished site.'],['What about domain and hosting?','We set everything up for you. The domain is registered in your name, so you always own it.'],['Which languages do you work in?','English, Romanian and Ukrainian, and we build sites in whatever language your clients speak.']],
   ct_h:"Let's write <em>your</em> story.",ct_p:'Tell us about your business. We reply within 24 hours with ideas and a price.',
   f_n:'Name',f_c:'Email or phone',f_m:'About your project',f_b:'Budget',f_s:'Send message',ok_h:'Thank you!',ok_p:"We'll get back to you within 24 hours.",
-  ft_p:'Web design & development studio. Romania · Remote.',ft_s:'Studio',ft_f:'Follow',ft_r:'Written by hand, with care.'
+  ft_p:'Websites & Flutter apps studio. Romania · Remote.',ft_s:'Studio',ft_f:'Follow',ft_r:'Written by hand, with care.'
 },
 ro: {
   nav1:'Proiecte',nav2:'Servicii',nav3:'Proces',nav4:'Prețuri',nav5:'Întrebări',nav6:'Contact',cta:'Începe un proiect',
-  h_eb:'Studio de web design și dezvoltare',h_h:'Site-uri scrise<br>cu <em>cerneală de obsidian.</em>',
-  h_p:'Proiectăm și construim site-uri rapide și elegante pentru afaceri care vor să arate premium online. Livrăm în zile, nu în luni.',
+  h_eb:'Studio de site-uri și aplicații',h_h:'Site-uri scrise<br>cu <em>cerneală de obsidian.</em>',
+  h_p:'Proiectăm și construim site-uri și aplicații Flutter rapide și elegante pentru afaceri care vor să arate premium online. Livrăm în zile, nu în luni.',
   h_b1:'Vezi proiectele',h_b2:'Cere o ofertă',st1:'zile până la lansare',st2:'zile până la demo',st3:'timp de răspuns',
-  mq:['Site-uri de prezentare','Landing page','Magazine online','Aplicații web','Panouri admin','SEO','Animații','Hosting'],
+  mq:['Site-uri de prezentare','Landing page','Magazine online','Aplicații web','Aplicații Flutter','iOS și Android','Panouri admin','SEO','Animații','Hosting'],
   w_eb:'Proiecte selectate',w_h:'Site-uri care <em>vând</em>, nu doar există.',w_p:'Proiecte live, nu capturi de ecran. Treci cu mouse-ul peste un card ca să derulezi site-ul real.',
   w1:'Firmă de construcții · Cehia · panou admin CMS',w2:'Laborator de tastaturi gaming · 3D, sunet și configurator live',w4:'Cafenea și brutărie · Meniu, recenzii, rezervare masă',w5:'Frizerie · Listă de prețuri, echipă, programare online',w6:'Clinică dentară · Tratamente, întrebări frecvente, programare',
   w3t:'Afacerea ta, <em>următoarea.</em>',w3d:'Proiectul tău poate fi următorul aici.',w3b:'Hai să vorbim',cur_open:'Deschide',
   s_eb:'Servicii',s_h:'Tot ce îți trebuie <em>online.</em>',s_p:'Un singur studio, de la prima schiță până la hosting: o echipă, o factură.',
-  srv:[['Site-uri de prezentare','Un site premium care explică ce faci și transformă vizitatorii în clienți.'],['Landing page-uri','O pagină, un scop: vinde un produs, un serviciu sau un eveniment.'],['Magazine online','Catalog, coș, plăți și comenzi direct în inboxul tău.'],['Aplicații web și panouri admin','Sisteme de rezervări, dashboard-uri și CMS, ca să-ți editezi singur site-ul.'],['SEO și Google','Pagini rapide, structură curată și profil Google Business, ca să te găsească oamenii din zonă.'],['Mentenanță și hosting','Hosting, backup-uri, actualizări și mici modificări în fiecare lună, fără griji.']],
+  srv:[['Site-uri de prezentare','Un site premium care explică ce faci și transformă vizitatorii în clienți.'],['Landing page-uri','O pagină, un scop: vinde un produs, un serviciu sau un eveniment.'],['Magazine online','Catalog, coș, plăți și comenzi direct în inboxul tău.'],['Aplicații mobile și desktop','iOS, Android, Windows și web dintr-un singur cod Flutter: design modern, viteză nativă, cost la jumătate.'],['Aplicații web și panouri admin','Sisteme de rezervări, dashboard-uri și CMS, ca să-ți editezi singur site-ul.'],['SEO și Google','Pagini rapide, structură curată și profil Google Business, ca să te găsească oamenii din zonă.'],['Mentenanță și hosting','Hosting, backup-uri, actualizări și mici modificări în fiecare lună, fără griji.']],
   b_eb:'Construcție live',b_h:'Privește cum un site <em>se scrie singur.</em>',b_p:'Cod curat, scris de mână, fără template-uri grele. De aceea site-urile noastre se încarcă într-o clipă.',
   p_eb:'Proces',p_h:'De la primul apel la <em>lansare.</em>',p_p:'Patru pași clari. Știi mereu ce urmează și cât costă.',
   steps:[['Apel gratuit','30 de minute despre afacerea, clienții și obiectivele tale. Fără obligații.'],['Demo în 3 zile','Vezi o versiune reală a site-ului înainte să plătești ceva important.'],['Construcție și finisare','Animații, texte, poze, versiunea mobilă și viteza, rafinate împreună cu tine.'],['Lansare și suport','Domeniu, hosting, Google și statistici. După lansare avem grijă de site.']],
@@ -692,25 +692,25 @@ ro: {
   from:'de la',once:'o singură dată',mo:'/lună',care:'+ mentenanță',popular:'Popular',choose:'Alege',
   plans:[['Pentru un început online',['Site de o pagină','Design adaptat pentru mobil','Formular de contact','Livrare în 7 zile']],['Cel mai ales de afacerile locale',['Până la 6 pagini','Animații premium','Panou admin pentru conținut','SEO de bază + profil Google']],['Magazine, aplicații și idei speciale',['Pagini nelimitate','Magazin online sau rezervări','Site multilingv','Suport prioritar']]],
   c_h:'Estimează-ți site-ul în <em>10 secunde.</em>',c_pages:'Pagini',c_tot:'Preț estimat',c_time:'Gata în',c_days:'zile',c_send:'Trimite estimarea',
-  opts:['Mai multe limbi','Magazin online','Panou admin','Rezervări online','SEO + profil Google','Scriem noi textele'],
+  opts:['Mai multe limbi','Magazin online','Panou admin','Rezervări online','SEO + profil Google','Scriem noi textele','Aplicație mobilă (Flutter)'],
   est:(p,o,t,d)=>`Estimare: ${p} pagini${o.length?', '+o.join(', '):''}. Aprox. €${t}, ${d} zile.`,
   f_h:'Întrebări <em>bune.</em>',
-  faq:[['Cât de repede poate fi gata site-ul?','Un site simplu durează aproximativ o săptămână, proiectele mai mari 2–4 săptămâni. Oricum, vezi un demo în 3 zile.'],['Pot modifica singur site-ul?','Da. Pachetele Business și Premium includ un panou admin unde schimbi texte, poze și prețuri fără cod.'],['Plătesc totul în avans?','Nu. 30% la început, restul doar după ce aprobi site-ul final.'],['Cum rămâne cu domeniul și hostingul?','Configurăm noi totul. Domeniul este înregistrat pe numele tău, deci îți aparține mereu.'],['În ce limbi lucrați?','Română, engleză și ucraineană, iar site-uri facem în orice limbă vorbesc clienții tăi.']],
+  faq:[['Faceți și aplicații mobile?','Da. Folosim Flutter: un singur cod pentru iOS, Android, desktop și web, cu design modern și performanță nativă. Aplicațiile simple încep de la €1 490.'],['Cât de repede poate fi gata site-ul?','Un site simplu durează aproximativ o săptămână, proiectele mai mari 2–4 săptămâni. Oricum, vezi un demo în 3 zile.'],['Pot modifica singur site-ul?','Da. Pachetele Business și Premium includ un panou admin unde schimbi texte, poze și prețuri fără cod.'],['Plătesc totul în avans?','Nu. 30% la început, restul doar după ce aprobi site-ul final.'],['Cum rămâne cu domeniul și hostingul?','Configurăm noi totul. Domeniul este înregistrat pe numele tău, deci îți aparține mereu.'],['În ce limbi lucrați?','Română, engleză și ucraineană, iar site-uri facem în orice limbă vorbesc clienții tăi.']],
   ct_h:'Hai să scriem <em>povestea ta.</em>',ct_p:'Spune-ne despre afacerea ta. Răspundem în 24 de ore cu idei și un preț.',
   f_n:'Nume',f_c:'Email sau telefon',f_m:'Despre proiect',f_b:'Buget',f_s:'Trimite mesajul',ok_h:'Mulțumim!',ok_p:'Revenim în cel mult 24 de ore.',
-  ft_p:'Studio de web design și dezvoltare. România · Remote.',ft_s:'Studio',ft_f:'Urmărește',ft_r:'Scris de mână, cu grijă.'
+  ft_p:'Studio de site-uri și aplicații Flutter. România · Remote.',ft_s:'Studio',ft_f:'Urmărește',ft_r:'Scris de mână, cu grijă.'
 },
 uk: {
   nav1:'Роботи',nav2:'Послуги',nav3:'Процес',nav4:'Ціни',nav5:'Питання',nav6:'Контакти',cta:'Почати проєкт',
-  h_eb:'Студія веб-дизайну та розробки',h_h:'Сайти, написані<br><em>обсидіановим чорнилом.</em>',
-  h_p:'Ми проєктуємо та створюємо швидкі й красиві сайти для бізнесу, який хоче виглядати преміально онлайн. Здаємо за дні, а не місяці.',
+  h_eb:'Студія сайтів і застосунків',h_h:'Сайти, написані<br><em>обсидіановим чорнилом.</em>',
+  h_p:'Ми проєктуємо та створюємо швидкі й красиві сайти та застосунки на Flutter для бізнесу, який хоче виглядати преміально онлайн. Здаємо за дні, а не місяці.',
   h_b1:'Наші роботи',h_b2:'Дізнатися ціну',st1:'днів до запуску',st2:'дні до демо',st3:'на відповідь',
-  mq:['Сайти-візитки','Лендінги','Інтернет-магазини','Вебзастосунки','Адмінпанелі','SEO','Анімації','Хостинг'],
+  mq:['Сайти-візитки','Лендінги','Інтернет-магазини','Вебзастосунки','Застосунки на Flutter','iOS та Android','Адмінпанелі','SEO','Анімації','Хостинг'],
   w_eb:'Наші роботи',w_h:'Сайти, які <em>продають</em>, а не просто існують.',w_p:'Живі проєкти, а не скріншоти. Наведіть на картку, щоб прогорнути справжній сайт.',
   w1:'Будівельна компанія · Чехія · адмінпанель',w2:'Лабораторія геймерських клавіатур · 3D, звук і конфігуратор',w4:'Кав\'ярня й пекарня · Меню, відгуки, бронювання столика',w5:'Барбершоп · Прайс, команда, онлайн-запис',w6:'Стоматологія · Послуги, FAQ, форма запису',
   w3t:'Ваш бізнес — <em>наступний.</em>',w3d:'Тут може бути ваш проєкт.',w3b:'Поговорімо',cur_open:'Відкрити',
   s_eb:'Послуги',s_h:'Усе, що потрібно бізнесу <em>онлайн.</em>',s_p:'Одна студія від першого ескізу до хостингу: одна команда, один рахунок.',
-  srv:[['Сайти для бізнесу','Преміальний сайт, який пояснює, що ви робите, і перетворює відвідувачів на дзвінки.'],['Лендінги','Одна сторінка — одна мета: продати товар, послугу чи подію.'],['Інтернет-магазини','Каталог, кошик, оплата й замовлення прямо вам на пошту.'],['Вебзастосунки та адмінки','Системи бронювання, дашборди та адмінка, щоб ви самі редагували сайт.'],['SEO та Google','Швидкі сторінки, правильна структура та профіль Google Business, щоб вас знаходили люди поруч.'],['Підтримка та хостинг','Хостинг, бекапи, оновлення й дрібні правки щомісяця, без вашого клопоту.']],
+  srv:[['Сайти для бізнесу','Преміальний сайт, який пояснює, що ви робите, і перетворює відвідувачів на дзвінки.'],['Лендінги','Одна сторінка — одна мета: продати товар, послугу чи подію.'],['Інтернет-магазини','Каталог, кошик, оплата й замовлення прямо вам на пошту.'],['Мобільні та десктопні застосунки','iOS, Android, Windows і веб з одного коду на Flutter: сучасний дизайн, нативна швидкість, удвічі дешевше.'],['Вебзастосунки та адмінки','Системи бронювання, дашборди та адмінка, щоб ви самі редагували сайт.'],['SEO та Google','Швидкі сторінки, правильна структура та профіль Google Business, щоб вас знаходили люди поруч.'],['Підтримка та хостинг','Хостинг, бекапи, оновлення й дрібні правки щомісяця, без вашого клопоту.']],
   b_eb:'Наживо',b_h:'Дивіться, як сайт <em>пише себе сам.</em>',b_p:'Чистий код, написаний вручну, без важких шаблонів. Тому наші сайти відкриваються миттєво.',
   p_eb:'Процес',p_h:'Від першого дзвінка до <em>запуску.</em>',p_p:'Чотири зрозумілі кроки. Ви завжди знаєте, що далі і скільки це коштує.',
   steps:[['Безкоштовна розмова','30 хвилин про ваш бізнес, клієнтів і цілі. Без зобов\'язань.'],['Демо за 3 дні','Ви бачите справжню робочу чернетку сайту ще до великої оплати.'],['Розробка й шліфування','Анімації, тексти, фото, мобільна версія та швидкість, доводимо разом з вами.'],['Запуск і підтримка','Домен, хостинг, Google та аналітика. Після запуску ми доглядаємо сайт.']],
@@ -718,16 +718,16 @@ uk: {
   from:'від',once:'одноразово',mo:'/міс',care:'+ підтримка',popular:'Популярний',choose:'Обрати',
   plans:[['Для старту онлайн',['Односторінковий сайт','Адаптивний дизайн','Форма зворотного зв\'язку','Готово за 7 днів']],['Найпопулярніший для місцевого бізнесу',['До 6 сторінок','Преміальні анімації','Адмінка для редагування','Базове SEO + профіль Google']],['Магазини, застосунки та нестандартні ідеї',['Необмежено сторінок','Магазин або онлайн-запис','Кілька мов','Пріоритетна підтримка']]],
   c_h:'Порахуйте сайт за <em>10 секунд.</em>',c_pages:'Сторінок',c_tot:'Орієнтовна ціна',c_time:'Готово за',c_days:'днів',c_send:'Надіслати розрахунок',
-  opts:['Кілька мов','Інтернет-магазин','Адмінпанель','Онлайн-запис','SEO + профіль Google','Тексти пишемо ми'],
+  opts:['Кілька мов','Інтернет-магазин','Адмінпанель','Онлайн-запис','SEO + профіль Google','Тексти пишемо ми','Мобільний застосунок (Flutter)'],
   est:(p,o,t,d)=>`Розрахунок: ${p} стор.${o.length?', '+o.join(', '):''}. Приблизно €${t}, ${d} днів.`,
   f_h:'Слушні <em>питання.</em>',
-  faq:[['Як швидко буде готовий сайт?','Простий — приблизно за тиждень, більші проєкти — за 2–4 тижні. Демо ви в будь-якому разі побачите за 3 дні.'],['Чи зможу я сам редагувати сайт?','Так. У Business і Premium є адмінка, де ви змінюєте тексти, фото й ціни без коду.'],['Чи треба платити все наперед?','Ні. 30% на старті, решту — тільки після того, як ви приймете готовий сайт.'],['А домен і хостинг?','Ми все налаштуємо. Домен реєструється на вас, тож він завжди ваш.'],['Якими мовами ви працюєте?','Українською, румунською та англійською, а сайти робимо будь-якою мовою ваших клієнтів.']],
+  faq:[['Ви робите мобільні застосунки?','Так. Ми працюємо на Flutter: один код для iOS, Android, десктопу й вебу, сучасний дизайн і нативна швидкість. Прості застосунки — від €1 490.'],['Як швидко буде готовий сайт?','Простий — приблизно за тиждень, більші проєкти — за 2–4 тижні. Демо ви в будь-якому разі побачите за 3 дні.'],['Чи зможу я сам редагувати сайт?','Так. У Business і Premium є адмінка, де ви змінюєте тексти, фото й ціни без коду.'],['Чи треба платити все наперед?','Ні. 30% на старті, решту — тільки після того, як ви приймете готовий сайт.'],['А домен і хостинг?','Ми все налаштуємо. Домен реєструється на вас, тож він завжди ваш.'],['Якими мовами ви працюєте?','Українською, румунською та англійською, а сайти робимо будь-якою мовою ваших клієнтів.']],
   ct_h:'Напишімо <em>вашу</em> історію.',ct_p:'Розкажіть про свій бізнес. Відповімо протягом 24 годин з ідеями та ціною.',
   f_n:'Ім\'я',f_c:'Email або телефон',f_m:'Про ваш проєкт',f_b:'Бюджет',f_s:'Надіслати',ok_h:'Дякуємо!',ok_p:'Ми відповімо протягом 24 годин.',
-  ft_p:'Студія веб-дизайну та розробки. Румунія · віддалено.',ft_s:'Студія',ft_f:'Соцмережі',ft_r:'Написано вручну, з турботою.'
+  ft_p:'Студія сайтів і застосунків на Flutter. Румунія · віддалено.',ft_s:'Студія',ft_f:'Соцмережі',ft_r:'Написано вручну, з турботою.'
 }};
 const PLANS = [['Start', 290, 15, false], ['Business', 590, 29, true], ['Premium', 1190, 49, false]];
-const OPT_P = [100, 400, 150, 150, 100, 20];
+const OPT_P = [100, 400, 150, 150, 100, 20, 1490];
 let L = localStorage.getItem('oq-lang') || ((navigator.language || 'en').slice(0, 2) === 'ro' ? 'ro' : /^(uk|ru)/.test(navigator.language || '') ? 'uk' : 'en');
 if (!T[L]) L = 'en';
 const t = k => T[L][k];
@@ -796,7 +796,7 @@ function calc() {
   pg.style.setProperty('--p', ((pages - 1) / 19 * 100) + '%');
   let total = 190 + pages * 40, days = 5 + Math.ceil(pages * 1.2);
   const picked = [];
-  optOn.forEach((on, i) => { if (!on) return; total += i === 5 ? OPT_P[i] * pages : OPT_P[i]; days += [3, 8, 3, 3, 1, 2][i]; picked.push(t('opts')[i]); });
+  optOn.forEach((on, i) => { if (!on) return; total += i === 5 ? OPT_P[i] * pages : OPT_P[i]; days += [3, 8, 3, 3, 1, 2, 21][i]; picked.push(t('opts')[i]); });
   total = Math.round(total / 10) * 10;
   $('#days').textContent = days;
   lastEst = t('est')(pages, picked, total, days);
