@@ -209,7 +209,7 @@ body::after{content:"";position:fixed;inset:-50%;z-index:200;pointer-events:none
 .wmeta .arr{flex:0 0 auto;width:52px;height:52px;border-radius:50%;border:1px solid #2b2b35;display:grid;place-items:center;transition:.5s var(--ease)}
 .wmeta .arr svg{width:18px;height:18px}
 .work:hover .arr{background:var(--fg);color:#000;transform:rotate(45deg)}
-.work-cta{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;padding:clamp(30px,4vw,54px);border-radius:22px;border:1px dashed #34333d;position:relative;overflow:hidden}
+.work-cta{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;padding:clamp(30px,4vw,54px);border-radius:22px;border:1px dashed #34333d;position:relative;overflow:hidden}
 .work-cta h3{font-size:clamp(40px,5vw,76px)}
 .work-cta p{color:var(--mute);margin-top:8px}
 .work-cta::before{content:"";position:absolute;width:520px;height:520px;right:-120px;top:-200px;background:radial-gradient(circle,rgba(242,237,218,.18),transparent 65%);pointer-events:none}
@@ -594,6 +594,11 @@ h1 em,h2 em,h3 em{color:transparent;background:linear-gradient(100deg,#ff6a2b,#f
           <div class="screen"><iframe loading="lazy" tabindex="-1" title="BrightSmile" data-src="https://sovalone.github.io/portfolio/brightsmile-dental/"></iframe></div></div><div class="phone" aria-hidden="true"><div class="pscreen"><iframe loading="lazy" tabindex="-1" title="Mobile preview" data-src="https://sovalone.github.io/portfolio/brightsmile-dental/"></iframe></div></div>
         <div class="wmeta"><div><h3>BrightSmile</h3><p data-i="w6">x</p></div><span class="arr"><svg><use href="#arr"/></svg></span></div>
       </a>
+      <a class="work rv" style="--d:.12s" href="https://sovalone.github.io/portfolio/dugis-burger/" target="_blank" rel="noopener" data-cur="open">
+        <div class="browser"><div class="bbar"><i></i><i></i><i></i><span>dugis-burger</span></div>
+          <div class="screen"><iframe loading="lazy" tabindex="-1" title="Dugi's Burger" data-src="https://sovalone.github.io/portfolio/dugis-burger/"></iframe></div></div><div class="phone" aria-hidden="true"><div class="pscreen"><iframe loading="lazy" tabindex="-1" title="Mobile preview" data-src="https://sovalone.github.io/portfolio/dugis-burger/"></iframe></div></div>
+        <div class="wmeta"><div><h3>Dugi's Burger</h3><p data-i="w7">x</p></div><span class="arr"><svg><use href="#arr"/></svg></span></div>
+      </a>
       <div class="work-cta rv">
         <div><h3 data-ih="w3t">Your business, <em>next.</em></h3><p data-i="w3d">Your project could be the next one here.</p></div>
         <a href="#contact" class="btn btn-w mag"><span data-i="w3b">Let's talk</span><svg><use href="#arr"/></svg></a>
@@ -711,7 +716,7 @@ h1 em,h2 em,h3 em{color:transparent;background:linear-gradient(100deg,#ff6a2b,#f
       <div><h5 data-i="ft_f">Follow</h5><a href="https://www.instagram.com/obsidianquill.studio/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1E4QsHNcMk/" target="_blank" rel="noopener">Facebook</a><a href="mailto:hello@obsidianquill.studio">Email</a></div>
     </div>
     <div class="giant" aria-hidden="true" id="giant"></div>
-    <div class="fbot"><span>© 2026 Obsidian Quill</span><span><a href="privacy.html" data-i="ft_priv">Privacy</a> · <span data-i="ft_r">Written by hand, with care.</span></span></div>
+    <div class="fbot"><span>© 2026 Obsidian Quill · <span data-i="ft_fd">Founder</span>: <a href="https://sovalone.github.io/portfolio/" target="_blank" rel="noopener" style="text-decoration:underline">Oleh Valo</a></span><span><a href="privacy.html" data-i="ft_priv">Privacy</a> · <span data-i="ft_r">Written by hand, with care.</span></span></div>
   </div>
 </footer>
 
@@ -748,7 +753,7 @@ en: {
   faq:[['Do you build mobile apps?','Yes. We use Flutter: one codebase for iOS, Android, desktop and web, with modern design and native performance. Simple apps start from €1 490.'],['How fast can you launch my site?','A simple site takes about a week. Bigger projects take 2–4 weeks. Either way, you see a demo within 3 days.'],['Can I edit the site myself?','Yes. Business and Premium include an admin panel where you change texts, photos and prices without touching code.'],['Do I pay everything upfront?','No. You pay 30% to start and the rest only after you approve the finished site.'],['What about domain and hosting?','We set everything up for you. The domain is registered in your name, so you always own it.'],['Which languages do you work in?','Ukrainian and Russian are our native languages, and we communicate with clients in English and Czech in writing (email and messages). We build sites in whatever language your clients speak.']],
   ct_h:"Let's write <em>your</em> story.",ct_p:'Tell us about your business. We reply within 24 hours with ideas and a price.',
   f_n:'Name',f_c:'Email or phone',f_m:'About your project',f_b:'Budget',f_s:'Send message',ok_h:'Thank you!',ok_p:"We'll get back to you within 24 hours.",ok_again:'Send another message',fm_name:'Please enter your name.',fm_contact:'Please enter your email or phone.',fm_sending:'Sending…',fm_err:'Sorry, the message could not be sent. Please write to us at <a href="mailto:hello@obsidianquill.studio">hello@obsidianquill.studio</a>.',f_priv:'By sending, you share your name, contact and message with us. We use them only to reply to you and keep them for up to 12 months. <a href="privacy.html">Privacy policy</a>',ft_priv:'Privacy',
-  ft_p:'Websites & Flutter apps studio. Romania · Remote.',ft_s:'Studio',ft_f:'Follow',ft_r:'Written by hand, with care.'
+  ft_p:'Websites & Flutter apps studio. Romania · Remote.',ft_s:'Studio',ft_f:'Follow',ft_r:'Written by hand, with care.',w7:"Burger restaurant · Czech Republic · Menu, Wolt ordering, location",ft_fd:"Founder"
 },
 ro: {
   nav1:'Proiecte',nav2:'Servicii',nav3:'Proces',nav4:'Prețuri',nav5:'Întrebări',nav6:'Contact',cta:'Începe un proiect',
@@ -774,7 +779,7 @@ ro: {
   faq:[['Faceți și aplicații mobile?','Da. Folosim Flutter: un singur cod pentru iOS, Android, desktop și web, cu design modern și performanță nativă. Aplicațiile simple încep de la €1 490.'],['Cât de repede poate fi gata site-ul?','Un site simplu durează aproximativ o săptămână, proiectele mai mari 2–4 săptămâni. Oricum, vezi un demo în 3 zile.'],['Pot modifica singur site-ul?','Da. Pachetele Business și Premium includ un panou admin unde schimbi texte, poze și prețuri fără cod.'],['Plătesc totul în avans?','Nu. 30% la început, restul doar după ce aprobi site-ul final.'],['Cum rămâne cu domeniul și hostingul?','Configurăm noi totul. Domeniul este înregistrat pe numele tău, deci îți aparține mereu.'],['În ce limbi lucrați?','Ucraineana și rusa sunt limbile noastre materne, iar cu clienții comunicăm în scris în engleză și cehă (email și mesaje). Site-urile le facem în orice limbă vorbesc clienții tăi.']],
   ct_h:'Hai să scriem <em>povestea ta.</em>',ct_p:'Spune-ne despre afacerea ta. Răspundem în 24 de ore cu idei și un preț.',
   f_n:'Nume',f_c:'Email sau telefon',f_m:'Despre proiect',f_b:'Buget',f_s:'Trimite mesajul',ok_h:'Mulțumim!',ok_p:'Revenim în cel mult 24 de ore.',ok_again:'Trimite alt mesaj',fm_name:'Te rugăm să scrii numele.',fm_contact:'Te rugăm să scrii emailul sau telefonul.',fm_sending:'Se trimite…',fm_err:'Ne pare rău, mesajul nu a putut fi trimis. Scrie-ne la <a href="mailto:hello@obsidianquill.studio">hello@obsidianquill.studio</a>.',f_priv:'Trimițând formularul, ne transmiți numele, datele de contact și mesajul. Le folosim doar ca să îți răspundem și le păstrăm cel mult 12 luni. <a href="privacy.html">Politica de confidențialitate</a>',ft_priv:'Confidențialitate',
-  ft_p:'Studio de site-uri și aplicații Flutter. România · Remote.',ft_s:'Studio',ft_f:'Urmărește',ft_r:'Scris de mână, cu grijă.'
+  ft_p:'Studio de site-uri și aplicații Flutter. România · Remote.',ft_s:'Studio',ft_f:'Urmărește',ft_r:'Scris de mână, cu grijă.',w7:"Restaurant de burgeri · Cehia · Meniu, comandă Wolt, locație",ft_fd:"Fondator"
 },
 uk: {
   nav1:'Роботи',nav2:'Послуги',nav3:'Процес',nav4:'Ціни',nav5:'Питання',nav6:'Контакти',cta:'Почати проєкт',
@@ -800,7 +805,7 @@ uk: {
   faq:[['Ви робите мобільні застосунки?','Так. Ми працюємо на Flutter: один код для iOS, Android, десктопу й вебу, сучасний дизайн і нативна швидкість. Прості застосунки — від €1 490.'],['Як швидко буде готовий сайт?','Простий — приблизно за тиждень, більші проєкти — за 2–4 тижні. Демо ви в будь-якому разі побачите за 3 дні.'],['Чи зможу я сам редагувати сайт?','Так. У Business і Premium є адмінка, де ви змінюєте тексти, фото й ціни без коду.'],['Чи треба платити все наперед?','Ні. 30% на старті, решту — тільки після того, як ви приймете готовий сайт.'],['А домен і хостинг?','Ми все налаштуємо. Домен реєструється на вас, тож він завжди ваш.'],['Якими мовами ви працюєте?','Українська та російська — наші рідні мови, а з клієнтами англійською та чеською спілкуємося письмово (email і повідомлення). Сайти робимо будь-якою мовою ваших клієнтів.']],
   ct_h:'Напишімо <em>вашу</em> історію.',ct_p:'Розкажіть про свій бізнес. Відповімо протягом 24 годин з ідеями та ціною.',
   f_n:'Ім\'я',f_c:'Email або телефон',f_m:'Про ваш проєкт',f_b:'Бюджет',f_s:'Надіслати',ok_h:'Дякуємо!',ok_p:'Ми відповімо протягом 24 годин.',ok_again:'Надіслати ще одне',fm_name:'Будь ласка, вкажіть ім\'я.',fm_contact:'Будь ласка, вкажіть email або телефон.',fm_sending:'Надсилаємо…',fm_err:'На жаль, повідомлення не надіслано. Напишіть нам на <a href="mailto:hello@obsidianquill.studio">hello@obsidianquill.studio</a>.',f_priv:'Надсилаючи форму, ви передаєте нам ім\'я, контакт і повідомлення. Ми використовуємо їх лише для відповіді та зберігаємо не довше 12 місяців. <a href="privacy.html">Політика конфіденційності</a>',ft_priv:'Конфіденційність',
-  ft_p:'Студія сайтів і застосунків на Flutter. Румунія · віддалено.',ft_s:'Студія',ft_f:'Соцмережі',ft_r:'Написано вручну, з турботою.'
+  ft_p:'Студія сайтів і застосунків на Flutter. Румунія · віддалено.',ft_s:'Студія',ft_f:'Соцмережі',ft_r:'Написано вручну, з турботою.',w7:"Бургерна · Чехія · Меню, замовлення через Wolt, локація",ft_fd:"Засновник"
 }};
 const PLANS = [['Start', 290, 15, false], ['Business', 590, 29, true], ['Premium', 1190, 49, false]];
 const OPT_P = [100, 400, 150, 150, 100, 20, 1490];
@@ -832,7 +837,7 @@ cs: {
   f_n:"Jméno",f_c:"E-mail nebo telefon",f_m:"O vašem projektu",f_b:"Rozpočet",f_s:"Odeslat zprávu",ok_h:"Děkujeme!",ok_p:"Ozveme se do 24 hodin.",ok_again:"Poslat další zprávu",
   fm_name:"Vyplňte prosím jméno.",fm_contact:"Vyplňte prosím e-mail nebo telefon.",fm_sending:"Odesílám…",fm_err:"Zprávu se nepodařilo odeslat. Napište nám prosím na <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"Odesláním nám předáte jméno, kontakt a zprávu. Použijeme je jen k odpovědi na váš dotaz a uchováme nejdéle 12 měsíců. <a href=\"privacy.html\">Ochrana osobních údajů</a>",
-  ft_p:"Studio webů a aplikací ve Flutteru. Rumunsko · na dálku.",ft_s:"Studio",ft_f:"Sledujte nás",ft_r:"Psáno ručně, s péčí.",ft_priv:"Ochrana osobních údajů"
+  ft_p:"Studio webů a aplikací ve Flutteru. Rumunsko · na dálku.",ft_s:"Studio",ft_f:"Sledujte nás",ft_r:"Psáno ručně, s péčí.",w7:"Burgerová restaurace · Česko · menu, objednávka přes Wolt, mapa",ft_fd:"Zakladatel",ft_priv:"Ochrana osobních údajů"
 },
 de: {
   nav1:"Projekte",nav2:"Leistungen",nav3:"Ablauf",nav4:"Preise",nav5:"FAQ",nav6:"Kontakt",cta:"Projekt starten",
@@ -860,7 +865,7 @@ de: {
   f_n:"Name",f_c:"E-Mail oder Telefon",f_m:"Über Ihr Projekt",f_b:"Budget",f_s:"Nachricht senden",ok_h:"Danke!",ok_p:"Wir melden uns innerhalb von 24 Stunden.",ok_again:"Weitere Nachricht senden",
   fm_name:"Bitte geben Sie Ihren Namen ein.",fm_contact:"Bitte geben Sie E-Mail oder Telefon ein.",fm_sending:"Wird gesendet…",fm_err:"Die Nachricht konnte leider nicht gesendet werden. Schreiben Sie uns an <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"Mit dem Absenden übermitteln Sie uns Name, Kontakt und Nachricht. Wir nutzen sie nur, um Ihre Anfrage zu beantworten, und speichern sie höchstens 12 Monate. <a href=\"privacy.html\">Datenschutz</a>",
-  ft_p:"Studio für Websites & Flutter-Apps. Rumänien · Remote.",ft_s:"Studio",ft_f:"Folgen",ft_r:"Von Hand geschrieben, mit Sorgfalt.",ft_priv:"Datenschutz"
+  ft_p:"Studio für Websites & Flutter-Apps. Rumänien · Remote.",ft_s:"Studio",ft_f:"Folgen",ft_r:"Von Hand geschrieben, mit Sorgfalt.",w7:"Burger-Restaurant · Tschechien · Speisekarte, Wolt-Bestellung, Standort",ft_fd:"Gründer",ft_priv:"Datenschutz"
 },
 fr: {
   nav1:"Projets",nav2:"Services",nav3:"Méthode",nav4:"Tarifs",nav5:"FAQ",nav6:"Contact",cta:"Lancer un projet",
@@ -888,7 +893,7 @@ fr: {
   f_n:"Nom",f_c:"E-mail ou téléphone",f_m:"Votre projet",f_b:"Budget",f_s:"Envoyer le message",ok_h:"Merci !",ok_p:"Nous vous répondons sous 24 heures.",ok_again:"Envoyer un autre message",
   fm_name:"Veuillez indiquer votre nom.",fm_contact:"Veuillez indiquer votre e-mail ou téléphone.",fm_sending:"Envoi…",fm_err:"Le message n’a pas pu être envoyé. Écrivez-nous à <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"En envoyant ce formulaire, vous nous transmettez votre nom, votre contact et votre message. Nous les utilisons uniquement pour vous répondre et les conservons 12 mois maximum. <a href=\"privacy.html\">Confidentialité</a>",
-  ft_p:"Studio de sites web et d’applications Flutter. Roumanie · à distance.",ft_s:"Studio",ft_f:"Suivez-nous",ft_r:"Écrit à la main, avec soin.",ft_priv:"Confidentialité"
+  ft_p:"Studio de sites web et d’applications Flutter. Roumanie · à distance.",ft_s:"Studio",ft_f:"Suivez-nous",ft_r:"Écrit à la main, avec soin.",w7:"Restaurant de burgers · Tchéquie · menu, commande Wolt, adresse",ft_fd:"Fondateur",ft_priv:"Confidentialité"
 },
 es: {
   nav1:"Proyectos",nav2:"Servicios",nav3:"Proceso",nav4:"Precios",nav5:"Preguntas",nav6:"Contacto",cta:"Empezar un proyecto",
@@ -916,7 +921,7 @@ es: {
   f_n:"Nombre",f_c:"Email o teléfono",f_m:"Sobre tu proyecto",f_b:"Presupuesto",f_s:"Enviar mensaje",ok_h:"¡Gracias!",ok_p:"Te respondemos en 24 horas.",ok_again:"Enviar otro mensaje",
   fm_name:"Escribe tu nombre, por favor.",fm_contact:"Escribe tu email o teléfono, por favor.",fm_sending:"Enviando…",fm_err:"No se pudo enviar el mensaje. Escríbenos a <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"Al enviar nos facilitas tu nombre, contacto y mensaje. Solo los usamos para responderte y los guardamos 12 meses como máximo. <a href=\"privacy.html\">Privacidad</a>",
-  ft_p:"Estudio de webs y apps Flutter. Rumanía · en remoto.",ft_s:"Estudio",ft_f:"Síguenos",ft_r:"Escrito a mano, con cuidado.",ft_priv:"Privacidad"
+  ft_p:"Estudio de webs y apps Flutter. Rumanía · en remoto.",ft_s:"Estudio",ft_f:"Síguenos",ft_r:"Escrito a mano, con cuidado.",w7:"Hamburguesería · Chequia · carta, pedidos por Wolt, ubicación",ft_fd:"Fundador",ft_priv:"Privacidad"
 },
 it: {
   nav1:"Lavori",nav2:"Servizi",nav3:"Processo",nav4:"Prezzi",nav5:"FAQ",nav6:"Contatti",cta:"Inizia un progetto",
@@ -944,7 +949,7 @@ it: {
   f_n:"Nome",f_c:"Email o telefono",f_m:"Il tuo progetto",f_b:"Budget",f_s:"Invia messaggio",ok_h:"Grazie!",ok_p:"Ti risponderemo entro 24 ore.",ok_again:"Invia un altro messaggio",
   fm_name:"Inserisci il tuo nome.",fm_contact:"Inserisci email o telefono.",fm_sending:"Invio in corso…",fm_err:"Non è stato possibile inviare il messaggio. Scrivici a <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"Inviando ci trasmetti nome, contatto e messaggio. Li usiamo solo per risponderti e li conserviamo al massimo 12 mesi. <a href=\"privacy.html\">Privacy</a>",
-  ft_p:"Studio di siti web e app Flutter. Romania · da remoto.",ft_s:"Studio",ft_f:"Seguici",ft_r:"Scritto a mano, con cura.",ft_priv:"Privacy"
+  ft_p:"Studio di siti web e app Flutter. Romania · da remoto.",ft_s:"Studio",ft_f:"Seguici",ft_r:"Scritto a mano, con cura.",w7:"Hamburgeria · Repubblica Ceca · menu, ordini Wolt, posizione",ft_fd:"Fondatore",ft_priv:"Privacy"
 },
 pl: {
   nav1:"Realizacje",nav2:"Usługi",nav3:"Proces",nav4:"Cennik",nav5:"FAQ",nav6:"Kontakt",cta:"Rozpocznij projekt",
@@ -972,7 +977,7 @@ pl: {
   f_n:"Imię",f_c:"E-mail lub telefon",f_m:"O Twoim projekcie",f_b:"Budżet",f_s:"Wyślij wiadomość",ok_h:"Dziękujemy!",ok_p:"Odpowiemy w ciągu 24 godzin.",ok_again:"Wyślij kolejną wiadomość",
   fm_name:"Wpisz swoje imię.",fm_contact:"Wpisz e-mail lub telefon.",fm_sending:"Wysyłanie…",fm_err:"Nie udało się wysłać wiadomości. Napisz do nas na <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"Wysyłając formularz, przekazujesz nam imię, kontakt i wiadomość. Używamy ich tylko do odpowiedzi i przechowujemy maksymalnie 12 miesięcy. <a href=\"privacy.html\">Prywatność</a>",
-  ft_p:"Studio stron i aplikacji Flutter. Rumunia · zdalnie.",ft_s:"Studio",ft_f:"Obserwuj",ft_r:"Pisane ręcznie, z troską.",ft_priv:"Prywatność"
+  ft_p:"Studio stron i aplikacji Flutter. Rumunia · zdalnie.",ft_s:"Studio",ft_f:"Obserwuj",ft_r:"Pisane ręcznie, z troską.",w7:"Burgerownia · Czechy · menu, zamówienia przez Wolt, lokalizacja",ft_fd:"Założyciel",ft_priv:"Prywatność"
 },
 nl: {
   nav1:"Werk",nav2:"Diensten",nav3:"Werkwijze",nav4:"Prijzen",nav5:"FAQ",nav6:"Contact",cta:"Start een project",
@@ -1000,7 +1005,7 @@ nl: {
   f_n:"Naam",f_c:"E-mail of telefoon",f_m:"Over je project",f_b:"Budget",f_s:"Bericht versturen",ok_h:"Bedankt!",ok_p:"We nemen binnen 24 uur contact op.",ok_again:"Nog een bericht sturen",
   fm_name:"Vul je naam in.",fm_contact:"Vul je e-mail of telefoon in.",fm_sending:"Versturen…",fm_err:"Het bericht kon niet worden verstuurd. Mail ons op <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"Door te versturen deel je je naam, contact en bericht met ons. We gebruiken ze alleen om te reageren en bewaren ze maximaal 12 maanden. <a href=\"privacy.html\">Privacy</a>",
-  ft_p:"Studio voor websites & Flutter-apps. Roemenië · op afstand.",ft_s:"Studio",ft_f:"Volg ons",ft_r:"Met de hand geschreven, met zorg.",ft_priv:"Privacy"
+  ft_p:"Studio voor websites & Flutter-apps. Roemenië · op afstand.",ft_s:"Studio",ft_f:"Volg ons",ft_r:"Met de hand geschreven, met zorg.",w7:"Burgerrestaurant · Tsjechië · menu, bestellen via Wolt, locatie",ft_fd:"Oprichter",ft_priv:"Privacy"
 },
 pt: {
   nav1:"Trabalhos",nav2:"Serviços",nav3:"Processo",nav4:"Preços",nav5:"FAQ",nav6:"Contacto",cta:"Iniciar projeto",
@@ -1028,7 +1033,7 @@ pt: {
   f_n:"Nome",f_c:"Email ou telefone",f_m:"Sobre o seu projeto",f_b:"Orçamento",f_s:"Enviar mensagem",ok_h:"Obrigado!",ok_p:"Respondemos em 24 horas.",ok_again:"Enviar outra mensagem",
   fm_name:"Indique o seu nome.",fm_contact:"Indique o seu email ou telefone.",fm_sending:"A enviar…",fm_err:"Não foi possível enviar a mensagem. Escreva-nos para <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"Ao enviar, partilha connosco o seu nome, contacto e mensagem. Usamo-los apenas para lhe responder e guardamo-los no máximo 12 meses. <a href=\"privacy.html\">Privacidade</a>",
-  ft_p:"Estúdio de sites e apps Flutter. Roménia · remoto.",ft_s:"Estúdio",ft_f:"Siga-nos",ft_r:"Escrito à mão, com cuidado.",ft_priv:"Privacidade"
+  ft_p:"Estúdio de sites e apps Flutter. Roménia · remoto.",ft_s:"Estúdio",ft_f:"Siga-nos",ft_r:"Escrito à mão, com cuidado.",w7:"Hamburgueria · Chéquia · menu, encomendas Wolt, localização",ft_fd:"Fundador",ft_priv:"Privacidade"
 },
 no: {
   nav1:"Arbeider",nav2:"Tjenester",nav3:"Prosess",nav4:"Priser",nav5:"FAQ",nav6:"Kontakt",cta:"Start et prosjekt",
@@ -1056,7 +1061,7 @@ no: {
   f_n:"Navn",f_c:"E-post eller telefon",f_m:"Om prosjektet ditt",f_b:"Budsjett",f_s:"Send melding",ok_h:"Takk!",ok_p:"Vi svarer innen 24 timer.",ok_again:"Send en ny melding",
   fm_name:"Skriv inn navnet ditt.",fm_contact:"Skriv inn e-post eller telefon.",fm_sending:"Sender…",fm_err:"Meldingen kunne ikke sendes. Skriv til oss på <a href=\"mailto:hello@obsidianquill.studio\">hello@obsidianquill.studio</a>.",
   f_priv:"Når du sender, deler du navn, kontakt og melding med oss. Vi bruker dem bare til å svare deg og lagrer dem i maks 12 måneder. <a href=\"privacy.html\">Personvern</a>",
-  ft_p:"Studio for nettsider og Flutter-apper. Romania · eksternt.",ft_s:"Studio",ft_f:"Følg oss",ft_r:"Skrevet for hånd, med omhu.",ft_priv:"Personvern"
+  ft_p:"Studio for nettsider og Flutter-apper. Romania · eksternt.",ft_s:"Studio",ft_f:"Følg oss",ft_r:"Skrevet for hånd, med omhu.",w7:"Burgerrestaurant · Tsjekkia · meny, bestilling via Wolt, kart",ft_fd:"Grunnlegger",ft_priv:"Personvern"
 }
 };
 
